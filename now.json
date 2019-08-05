@@ -1,0 +1,10 @@
+{
+    "version": 2,
+    "name": "lokibai",
+    "builds": [
+      {
+        "src": "*.html",
+        "use": "@now/static"
+      }
+    ]
+}
