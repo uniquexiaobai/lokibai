@@ -3,7 +3,7 @@
     "name": "lokibai",
     "builds": [
       {
-        "src": "*.html",
+        "src": "**",
         "use": "@now/static"
       }
     ]

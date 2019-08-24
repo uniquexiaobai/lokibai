@@ -6,7 +6,7 @@ workbox.routing.registerRoute(
 );
 
 workbox.routing.registerRoute(
-	new RegExp('https://bing.lokibai.com'),
+	new RegExp('https://bing-api.lokibai.com'),
 	workbox.strategies.staleWhileRevalidate()
 );
 
