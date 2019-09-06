@@ -1,38 +1,80 @@
-importScripts('https://storage.googleapis.com/workbox-cdn/releases/3.2.0/workbox-sw.js');
+importScripts('https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js');
 
 workbox.routing.registerRoute(
-	new RegExp('/(index.html)?'),
-	workbox.strategies.staleWhileRevalidate()
+	new RegExp('/(index.html)?$'),
+	new workbox.strategies.StaleWhileRevalidate(),
 );
 
 workbox.routing.registerRoute(
-	new RegExp('https://bing-api.lokibai.com'),
-	workbox.strategies.staleWhileRevalidate()
+	/^https:\/\/bing-api\.lokibai\.com/,
+	new workbox.strategies.StaleWhileRevalidate(),
 );
 
 workbox.routing.registerRoute(
-	new RegExp('https?://cn.bing.com'),
-	workbox.strategies.staleWhileRevalidate()
+	/^https:\/\/cn\.bing\.com/,
+	new workbox.strategies.StaleWhileRevalidate(),
 );
 
 workbox.routing.registerRoute(
-	new RegExp('https?://uniquexiaobai.oss-cn-hangzhou.aliyuncs.com'),
-	workbox.strategies.cacheFirst({
+	/^https:\/\/uniquexiaobai\.cn/,
+	new workbox.strategies.CacheFirst({
+        cacheName: 'images',
 		plugins: [
-	      new workbox.cacheableResponse.Plugin({
-	        statuses: [0, 200]
-	      })
-	    ]
-	})
+	        new workbox.cacheableResponse.Plugin({
+	            statuses: [0, 200]
+            }),
+            new workbox.expiration.Plugin({
+                maxAgeSeconds: 60 * 60 * 24 * 365, // 1 year
+                maxEntries: 30,
+            }),
+	    ],
+	}),
 );
 
 workbox.routing.registerRoute(
-	new RegExp('https?://lib.baomitu.com'),
-	workbox.strategies.cacheFirst({
+	/^https:\/\/fonts\.gstatic\.com/,
+	new workbox.strategies.CacheFirst({
+        cacheName: 'fonts',
 		plugins: [
-	      new workbox.cacheableResponse.Plugin({
-	        statuses: [0, 200]
-	      })
-	    ]
-	})
+	        new workbox.cacheableResponse.Plugin({
+	            statuses: [0, 200]
+            }),
+            new workbox.expiration.Plugin({
+                maxAgeSeconds: 60 * 60 * 24 * 365, // 1 year
+                maxEntries: 30,
+            }),
+	    ],
+	}),
+);
+
+workbox.routing.registerRoute(
+    new RegExp('/icon'),
+	new workbox.strategies.CacheFirst({
+        cacheName: 'manifest',
+		plugins: [
+	        new workbox.cacheableResponse.Plugin({
+	            statuses: [0, 200]
+            }),
+            new workbox.expiration.Plugin({
+                maxAgeSeconds: 60 * 60 * 24 * 30, // 30 days
+                maxEntries: 30,
+            }),
+	    ],
+	}),
+);
+
+workbox.routing.registerRoute(
+    new RegExp('/manifest.json'),
+	new workbox.strategies.CacheFirst({
+        cacheName: 'manifest',
+		plugins: [
+	        new workbox.cacheableResponse.Plugin({
+	            statuses: [0, 200]
+            }),
+            new workbox.expiration.Plugin({
+                maxAgeSeconds: 60 * 60 * 24 * 30, // 30 days
+                maxEntries: 30,
+            }),
+	    ],
+	}),
 );
