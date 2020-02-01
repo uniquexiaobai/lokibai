@@ -1,170 +1,299 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>About me</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="/icon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/icon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/icon/favicon-16x16.png">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+		/>
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>About me</title>
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="/icon/apple-touch-icon.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="/icon/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="/icon/favicon-16x16.png"
+		/>
 
-    <link rel="manifest" href="/manifest.json">
+		<link rel="manifest" href="/manifest.json" />
 
-    <link rel="dns-prefetch" href="//lokibai.com">
-    <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link rel="dns-prefetch" href="//storage.googleapis.com">
-    <link rel="dns-prefetch" href="//uniquexiaobai.cn">
+		<link rel="dns-prefetch" href="//lokibai.com" />
+		<link rel="dns-prefetch" href="//fonts.gstatic.com" />
+		<link rel="dns-prefetch" href="//storage.googleapis.com" />
+		<link rel="dns-prefetch" href="//uniquexiaobai.cn" />
 
-    <link rel="preconnect" href="//lokibai.com">
-    <link rel="preconnect" href="//fonts.gstatic.com">
-    <link rel="preconnect" href="//storage.googleapis.com">
-    <link rel="preconnect" href="//uniquexiaobai.cn">
+		<link rel="preconnect" href="//lokibai.com" />
+		<link rel="preconnect" href="//fonts.gstatic.com" />
+		<link rel="preconnect" href="//storage.googleapis.com" />
+		<link rel="preconnect" href="//uniquexiaobai.cn" />
 
-    <link rel="preload" href="//uniquexiaobai.cn/logo.png" as="image">
-	<style>
-        /* latin */
-        @font-face {
-            font-family: 'IBM Plex Mono';
-            font-style: normal;
-            font-weight: 400;
-            font-display: swap;
-            src: local('IBM Plex Mono'), local('IBMPlexMono'), url(https://fonts.gstatic.com/s/ibmplexmono/v5/-F63fjptAgt5VM-kVkqdyU8n1i8q131nj-o.woff2) format('woff2');
-            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-        }
-		body, h1 {
-			margin: 0;
-		}
-		html, body {
-			height: 100%;
-		}
-		body {
-			position: relative;
-			display: -webkit-box;
-			display: -ms-flexbox;
-			display: flex;
-			-webkit-box-pack: center;
-			    -ms-flex-pack: center;
-			        justify-content: center;
-			-webkit-box-align: center;
-			    -ms-flex-align: center;
-			        align-items: center;
-			background-position: center;
-			background-size: cover;
-            font-family: 'IBM Plex Mono';
-			font-size: 75%;
-			color: #fff;
-		}
-		.container {
-			padding: 2rem 5rem;
-			border-radius: 1rem;
-			display: -webkit-box;
-			display: -ms-flexbox;
-			display: flex;
-			-webkit-box-orient: vertical;
-			-webkit-box-direction: normal;
-			    -ms-flex-direction: column;
-			        flex-direction: column;
-			-webkit-box-align: center;
-			    -ms-flex-align: center;
-			        align-items: center;
-			-webkit-box-pack: center;
-			    -ms-flex-pack: center;
-			        justify-content: center;
-			background-color: rgba(0, 0, 0, 0.3);
-		}
-		.avatar_logo {
-			width: 8rem;
-			height: 8rem;
-			margin-bottom: 0.3rem;
-			border-radius: 50%;
-		}
-		.avatar_name {
-			margin-bottom: 0.3rem;
-			font-size: 1.6rem;
-		}
-		.links {
-			display: -webkit-box;
-			display: -ms-flexbox;
-			display: flex;
-			-webkit-box-orient: vertical;
-			-webkit-box-direction: normal;
-			    -ms-flex-direction: column;
-			        flex-direction: column;
-			-webkit-box-pack: center;
-			    -ms-flex-pack: center;
-			        justify-content: center;
-			-webkit-box-align: center;
-			    -ms-flex-align: center;
-			        align-items: center;
-		}
-		.links > a {
-			margin: 0.05rem;
-			font-size: 0.9rem;
-            text-decoration: none;
-			color: inherit;
-		}
-        .links > a:hover {
-            text-decoration: underline;
-        }
-	</style>
-</head>
-<body>
-	<div class="container">
-		<img class="avatar_logo" src="//uniquexiaobai.cn/logo.png" alt="logo"/>
-		<h1 class="avatar_name">Loki Bai</h1>
-		<div class="links">
-			<a href="https://api.lokibai.com">api</a>
-			<a href="https://www.yuque.com/lokibai/wiki">wiki</a>
-			<a href="https://github.com/uniquexiaobai/">github</a>
-			<a href="https://lokibai.me/leetcode/">leetcode</a>
-			<a href="https://cheatsheet.lokibai.com">cheatsheet</a>
+		<link rel="preload" href="//uniquexiaobai.cn/logo.png" as="image" />
+		<style>
+			/* latin */
+			@font-face {
+				font-family: 'IBM Plex Mono';
+				font-style: normal;
+				font-weight: 400;
+				font-display: swap;
+				src: local('IBM Plex Mono'), local('IBMPlexMono'),
+					url(https://fonts.gstatic.com/s/ibmplexmono/v5/-F63fjptAgt5VM-kVkqdyU8n1i8q131nj-o.woff2)
+						format('woff2');
+				unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+					U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+					U+2212, U+2215, U+FEFF, U+FFFD;
+			}
+			body,
+			h1 {
+				margin: 0;
+			}
+			html,
+			body {
+				height: 100%;
+			}
+			body {
+				position: relative;
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: flex;
+				-webkit-box-pack: center;
+				-ms-flex-pack: center;
+				justify-content: center;
+				-webkit-box-align: center;
+				-ms-flex-align: center;
+				align-items: center;
+				background-position: center;
+				background-size: cover;
+				font-family: 'IBM Plex Mono';
+				font-size: 75%;
+				color: #fff;
+			}
+			.container {
+				padding: 2rem 5rem;
+				border-radius: 1rem;
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: flex;
+				-webkit-box-orient: vertical;
+				-webkit-box-direction: normal;
+				-ms-flex-direction: column;
+				flex-direction: column;
+				-webkit-box-align: center;
+				-ms-flex-align: center;
+				align-items: center;
+				-webkit-box-pack: center;
+				-ms-flex-pack: center;
+				justify-content: center;
+				background-color: rgba(0, 0, 0, 0.4);
+			}
+			.avatar_logo {
+				width: 8rem;
+				height: 8rem;
+				margin-bottom: 0.3rem;
+				border-radius: 50%;
+			}
+			.avatar_name {
+				margin-bottom: 0.3rem;
+				font-size: 1.6rem;
+			}
+			.links {
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: flex;
+				-webkit-box-orient: vertical;
+				-webkit-box-direction: normal;
+				-ms-flex-direction: column;
+				flex-direction: column;
+				-webkit-box-pack: center;
+				-ms-flex-pack: center;
+				justify-content: center;
+				-webkit-box-align: center;
+				-ms-flex-align: center;
+				align-items: center;
+			}
+			.links > a {
+				margin: 0.05rem;
+				font-size: 0.9rem;
+				text-decoration: none;
+				color: inherit;
+			}
+			.links > a:hover {
+				text-decoration: underline;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<img class="avatar_logo" src="//uniquexiaobai.cn/logo.png" alt="logo" />
+			<h1 class="avatar_name">Loki Bai</h1>
+			<div class="links">
+				<a href="https://hao.lokibai.com">hao</a>
+				<a href="https://api.lokibai.com">api</a>
+				<a href="https://www.yuque.com/lokibai/wiki">wiki</a>
+				<a href="https://github.com/uniquexiaobai/">github</a>
+				<a href="https://lokibai.me/leetcode/">leetcode</a>
+			</div>
 		</div>
-	</div>
 
-	<script>
-		var bingApi = 'https://bing-api.lokibai.com',
-		    defaultImageUrl = '//uniquexiaobai.cn/bing.png';
+		<script>
+			var bingApi = 'https://bing-api.lokibai.com',
+				defaultImageUrl = '//uniquexiaobai.cn/bing.png';
 
-		function setBackgroundImage(url) {
-			url = url || defaultImageUrl;
-			document.body.style.backgroundImage = 'url(' + url + ')';
-		}
+			function setBackgroundImage(url) {
+				url = url || defaultImageUrl;
+				document.body.style.backgroundImage = 'url(' + url + ')';
+			}
 
-		window.addEventListener('DOMContentLoaded', function () {
-            fetch(bingApi)
-                .then(function(response) {
-                    if (response.status >= 200 && response.status < 300) {
-                        return Promise.resolve(response);
-                    } else {
-                        return Promise.reject(new Error(response.statusText));
-                    }
-                })
-                .then(function(response) {
-                    return response.json();
-                })
-                .then(function(response) {
-                    var url = response.data;
-                    if (url) {
-                        setBackgroundImage(url);
-                    } else {
-                        setBackgroundImage();
-                    }
-                })
-                .catch(function() {
-                    setBackgroundImage();
-                });
-		});
+			window.addEventListener('DOMContentLoaded', function() {
+				fetch(bingApi)
+					.then(function(response) {
+						if (response.status >= 200 && response.status < 300) {
+							return Promise.resolve(response);
+						} else {
+							return Promise.reject(new Error(response.statusText));
+						}
+					})
+					.then(function(response) {
+						return response.json();
+					})
+					.then(function(response) {
+						var url = response.data;
+						if (url) {
+							setBackgroundImage(url);
+						} else {
+							setBackgroundImage();
+						}
+					})
+					.catch(function() {
+						setBackgroundImage();
+					});
+			});
 
-		if ('serviceWorker' in navigator) {
-		    window.onload = function () {
-		        navigator.serviceWorker.register('/sw.js');
-		    };
-		}
+			if ('serviceWorker' in navigator) {
+				window.onload = function() {
+					navigator.serviceWorker.register('/sw.js');
+				};
+			}
 
-        // quicklink
-        !function(e,n){"object"==typeof exports&&"undefined"!=typeof module?module.exports=n():"function"==typeof define&&define.amd?define(n):e.quicklink=n()}(this,function(){var e={};function n(e){return new Promise(function(n,t){var r=new XMLHttpRequest;r.open("GET",e,r.withCredentials=!0),r.onload=function(){200===r.status?n():t()},r.send()})}var t,r,i=(t="prefetch",((r=document.createElement("link")).relList||{}).supports&&r.relList.supports(t)?function(e){return new Promise(function(n,t){var r=document.createElement("link");r.rel="prefetch",r.href=e,r.onload=n,r.onerror=t,document.head.appendChild(r)})}:n);function o(t,r,o){if(!(e[t]||(o=navigator.connection)&&((o.effectiveType||"").includes("2g")||o.saveData)))return(r?function(e){return null==self.fetch?n(e):fetch(e,{credentials:"include"})}:i)(t).then(function(){e[t]=!0})}var u=u||function(e){var n=Date.now();return setTimeout(function(){e({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-n))}})},1)},c=new Set,f=new IntersectionObserver(function(e){e.forEach(function(e){if(e.isIntersecting){var n=e.target.href;c.has(n)&&a(n)}})});function a(e){c.delete(e),o(new URL(e,location.href).toString(),f.priority)}return function(e){e=Object.assign({timeout:2e3,priority:!1,timeoutFn:u,el:document},e),f.priority=e.priority;var n=e.origins||[location.hostname],t=e.ignores||[];e.timeoutFn(function(){e.urls?e.urls.forEach(a):Array.from(e.el.querySelectorAll("a"),function(e){f.observe(e),n.length&&!n.includes(e.hostname)||function e(n,t){return Array.isArray(t)?t.some(function(t){return e(n,t)}):(t.test||t).call(t,n.href,n)}(e,t)||c.add(e.href)})},{timeout:e.timeout})}});
-        quicklink();
-    </script>
-</body>
+			// quicklink
+			!(function(e, n) {
+				'object' == typeof exports && 'undefined' != typeof module
+					? (module.exports = n())
+					: 'function' == typeof define && define.amd
+					? define(n)
+					: (e.quicklink = n());
+			})(this, function() {
+				var e = {};
+				function n(e) {
+					return new Promise(function(n, t) {
+						var r = new XMLHttpRequest();
+						r.open('GET', e, (r.withCredentials = !0)),
+							(r.onload = function() {
+								200 === r.status ? n() : t();
+							}),
+							r.send();
+					});
+				}
+				var t,
+					r,
+					i =
+						((t = 'prefetch'),
+						((r = document.createElement('link')).relList || {}).supports &&
+						r.relList.supports(t)
+							? function(e) {
+									return new Promise(function(n, t) {
+										var r = document.createElement('link');
+										(r.rel = 'prefetch'),
+											(r.href = e),
+											(r.onload = n),
+											(r.onerror = t),
+											document.head.appendChild(r);
+									});
+							  }
+							: n);
+				function o(t, r, o) {
+					if (
+						!(
+							e[t] ||
+							((o = navigator.connection) &&
+								((o.effectiveType || '').includes('2g') || o.saveData))
+						)
+					)
+						return (r
+							? function(e) {
+									return null == self.fetch
+										? n(e)
+										: fetch(e, { credentials: 'include' });
+							  }
+							: i)(t).then(function() {
+							e[t] = !0;
+						});
+				}
+				var u =
+						u ||
+						function(e) {
+							var n = Date.now();
+							return setTimeout(function() {
+								e({
+									didTimeout: !1,
+									timeRemaining: function() {
+										return Math.max(0, 50 - (Date.now() - n));
+									},
+								});
+							}, 1);
+						},
+					c = new Set(),
+					f = new IntersectionObserver(function(e) {
+						e.forEach(function(e) {
+							if (e.isIntersecting) {
+								var n = e.target.href;
+								c.has(n) && a(n);
+							}
+						});
+					});
+				function a(e) {
+					c.delete(e), o(new URL(e, location.href).toString(), f.priority);
+				}
+				return function(e) {
+					(e = Object.assign(
+						{ timeout: 2e3, priority: !1, timeoutFn: u, el: document },
+						e
+					)),
+						(f.priority = e.priority);
+					var n = e.origins || [location.hostname],
+						t = e.ignores || [];
+					e.timeoutFn(
+						function() {
+							e.urls
+								? e.urls.forEach(a)
+								: Array.from(e.el.querySelectorAll('a'), function(e) {
+										f.observe(e),
+											(n.length && !n.includes(e.hostname)) ||
+												(function e(n, t) {
+													return Array.isArray(t)
+														? t.some(function(t) {
+																return e(n, t);
+														  })
+														: (t.test || t).call(t, n.href, n);
+												})(e, t) ||
+												c.add(e.href);
+								  });
+						},
+						{ timeout: e.timeout }
+					);
+				};
+			});
+			quicklink();
+		</script>
+	</body>
 </html>
