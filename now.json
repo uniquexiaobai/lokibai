@@ -8,39 +8,103 @@
 	],
 	"routes": [
 		{
-			"src": "/tools",
-			"status": 301,
-			"headers": { "Location": "https://www.yuque.com/lokibai/wiki/tools" }
-    },
-    {
-			"src": "/feed",
-			"status": 301,
-			"headers": { "Location": "https://www.yuque.com/lokibai/wiki/feed" }
-    },
-    {
-			"src": "/awesome",
-			"status": 301,
-			"headers": { "Location": "https://www.yuque.com/lokibai/wiki/awesome" }
-    },
-    {
+			"src": "/todo",
+			"status": 302,
+			"headers": { "Location": "https://dida365.com/#q/all/today" }
+		},
+		{
+			"src": "/now",
+			"status": 302,
+			"headers": { "Location": "https://zeit.co/dashboard" }
+		},
+		{
+			"src": "/gist",
+			"status": 302,
+			"headers": {
+				"Location": "https://gist.github.com/uniquexiaobai?direction=desc&sort=updated"
+			}
+		},
+		{
+			"src": "/npm",
+			"status": 302,
+			"headers": {
+				"Location": "https://www.npmjs.com/settings/lokibai/packages"
+			}
+		},
+		{
+			"src": "/blog",
+			"status": 302,
+			"headers": { "Location": "https://www.yuque.com/lokibai/blog" }
+		},
+		{
+			"src": "/wiki",
+			"status": 302,
+			"headers": { "Location": "https://www.yuque.com/lokibai/wiki" }
+		},
+		{
+			"src": "/tips",
+			"status": 302,
+			"headers": { "Location": "https://www.yuque.com/lokibai/wiki/tips" }
+		},
+		{
+			"src": "/snippets",
+			"status": 302,
+			"headers": { "Location": "https://www.yuque.com/lokibai/wiki/snippets" }
+		},
+		{
 			"src": "/algorithm",
-			"status": 301,
+			"status": 302,
 			"headers": { "Location": "https://www.yuque.com/lokibai/wiki/algorithm" }
-    },
-    {
-			"src": "/snippet",
-			"status": 301,
-			"headers": { "Location": "https://www.yuque.com/lokibai/wiki/snippet" }
-    },
-    {
-			"src": "/what-happens-when",
-			"status": 301,
-			"headers": { "Location": "https://www.yuque.com/lokibai/wiki/what-happens-when" }
-    },
-    {
+		},
+		{
 			"src": "/blogs",
-			"status": 301,
+			"status": 302,
 			"headers": { "Location": "https://www.yuque.com/lokibai/wiki/blogs" }
-    }
+		},
+		{
+			"src": "/tools",
+			"status": 302,
+			"headers": { "Location": "https://www.yuque.com/lokibai/wiki/tools" }
+		},
+		{
+			"src": "/feed",
+			"status": 302,
+			"headers": { "Location": "https://www.yuque.com/lokibai/wiki/feed" }
+		},
+		{
+			"src": "/awesome",
+			"status": 302,
+			"headers": { "Location": "https://www.yuque.com/lokibai/wiki/awesome" }
+		},
+
+		{
+			"src": "/performance",
+			"status": 302,
+			"headers": {
+				"Location": "https://www.yuque.com/lokibai/wiki/performance"
+			}
+		},
+		{
+			"src": "/what-happens-when",
+			"status": 302,
+			"headers": {
+				"Location": "https://www.yuque.com/lokibai/wiki/what-happens-when"
+			}
+		},
+		{
+			"src": "/learning",
+			"status": 302,
+			"headers": { "Location": "https://www.yuque.com/lokibai/wiki/learning" }
+		},
+		{
+			"src": "/resume",
+			"status": 302,
+			"headers": { "Location": "https://www.yuque.com/lokibai/wiki/resume" }
+		},
+		{
+			"src": "/saying",
+			"status": 302,
+			"headers": { "Location": "https://www.yuque.com/lokibai/wiki/saying" }
+		}
 	]
 }
