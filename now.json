@@ -1,10 +1,46 @@
 {
-    "version": 2,
-    "name": "lokibai",
-    "builds": [
-      {
-        "src": "**",
-        "use": "@now/static"
-      }
-    ]
+	"version": 2,
+	"builds": [
+		{
+			"src": "**",
+			"use": "@now/static"
+		}
+	],
+	"routes": [
+		{
+			"src": "/tools",
+			"status": 301,
+			"headers": { "Location": "https://www.yuque.com/lokibai/wiki/tools" }
+    },
+    {
+			"src": "/feed",
+			"status": 301,
+			"headers": { "Location": "https://www.yuque.com/lokibai/wiki/feed" }
+    },
+    {
+			"src": "/awesome",
+			"status": 301,
+			"headers": { "Location": "https://www.yuque.com/lokibai/wiki/awesome" }
+    },
+    {
+			"src": "/algorithm",
+			"status": 301,
+			"headers": { "Location": "https://www.yuque.com/lokibai/wiki/algorithm" }
+    },
+    {
+			"src": "/snippet",
+			"status": 301,
+			"headers": { "Location": "https://www.yuque.com/lokibai/wiki/snippet" }
+    },
+    {
+			"src": "/what-happens-when",
+			"status": 301,
+			"headers": { "Location": "https://www.yuque.com/lokibai/wiki/what-happens-when" }
+    },
+    {
+			"src": "/blogs",
+			"status": 301,
+			"headers": { "Location": "https://www.yuque.com/lokibai/wiki/blogs" }
+    }
+	]
 }
