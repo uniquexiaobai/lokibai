@@ -6,45 +6,34 @@
       "use": "@now/static"
     }
   ],
-  "routes": [
+  "redirects": [
     {
-      "src": "/todo",
-      "status": 302,
-      "headers": { "Location": "https://dida365.com/#q/all/today" }
+      "source": "/todo",
+      "destination": "https://dida365.com/#q/all/today"
     },
     {
-      "src": "/now",
-      "status": 302,
-      "headers": { "Location": "https://vercel.com/dashboard" }
+      "source": "/now",
+      "destination": "https://vercel.com/dashboard"
     },
     {
-      "src": "/gist",
-      "status": 302,
-      "headers": {
-        "Location": "https://gist.github.com/uniquexiaobai?direction=desc&sort=updated"
-      }
+      "source": "/gist",
+      "destination": "https://gist.github.com/uniqzexiaobai?direction=desc&sort=updated"
     },
     {
-      "src": "/npm",
-      "status": 302,
-      "headers": {
-        "Location": "https://www.npmjs.com/settings/lokibai/packages"
-      }
+      "source": "/npm",
+      "destination": "https://www.npmjs.com/settings/lokibai/packages"
     },
     {
-      "src": "/interview",
-      "status": 302,
-      "headers": { "Location": "https://www.yuque.com/lokibai/interview" }
+      "source": "/interview",
+      "destination": "https://www.yuque.com/lokibai/interview"
     },
     {
-      "src": "/react",
-      "status": 302,
-      "headers": { "Location": "https://www.yuque.com/lokibai/react" }
+      "source": "/react",
+      "destination": "https://www.yuque.com/lokibai/react"
     },
     {
-      "src": "/wiki",
-      "status": 302,
-      "headers": { "Location": "https://www.yuque.com/lokibai/wiki" }
+      "source": "/wiki",
+      "destination": "https://www.yuque.com/lokibai/wiki"
     }
   ],
   "rewrites": [
