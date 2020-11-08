@@ -38,12 +38,8 @@
   ],
   "rewrites": [
     {
-      "source": "/sheets",
-      "destination": "https://sheets.googleapis.com/v4/spreadsheets"
-    },
-    {
-      "source": "/sheets/hao",
-      "destination": "https://sheets.googleapis.com/v4/spreadsheets/1nwgg4TWOH86MTcnu8L7T0NGoeAy_Tkd6NGZAfcNS_hA/values/main"
+      "source": "/proxy/sheets/(.*)",
+      "destination": "https://sheets.googleapis.com/v4/spreadsheets/$1"
     }
   ]
 }
