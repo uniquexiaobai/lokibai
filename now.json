@@ -12,7 +12,7 @@
       "destination": "https://dida365.com/#q/all/today"
     },
     {
-      "source": "/now",
+      "source": "/vercel",
       "destination": "https://vercel.com/dashboard"
     },
     {
@@ -34,12 +34,6 @@
     {
       "source": "/wiki",
       "destination": "https://www.yuque.com/lokibai/wiki"
-    }
-  ],
-  "rewrites": [
-    {
-      "source": "/proxy/sheets/(.*)",
-      "destination": "https://sheets.googleapis.com/v4/spreadsheets/$1"
     }
   ]
 }
