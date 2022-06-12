@@ -3,12 +3,17 @@ importScripts(
 );
 
 workbox.routing.registerRoute(
-  new RegExp('/(index.html)?$'),
+  /^https:\/\/lokibai\.vercel\.app(\/index.html)?$/,
   new workbox.strategies.StaleWhileRevalidate()
 );
 
 workbox.routing.registerRoute(
   /^https:\/\/bing-api\.lokibai\.vercel\.app/,
+  new workbox.strategies.StaleWhileRevalidate()
+);
+
+workbox.routing.registerRoute(
+  /^https:\/\/bing-api-lokibai\.vercel\.app/,
   new workbox.strategies.StaleWhileRevalidate()
 );
 
