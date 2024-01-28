@@ -180,7 +180,7 @@
       }
 
       window.addEventListener('DOMContentLoaded', function () {
-        fetch(bingApi)
+        fetch(bingApi, {'mode': 'no-cors'})
           .then(function (response) {
             if (response.status >= 200 && response.status < 300) {
               return Promise.resolve(response);
