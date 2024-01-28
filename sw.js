@@ -3,12 +3,12 @@ importScripts(
 );
 
 workbox.routing.registerRoute(
-  /^https:\/\/lokibai\.online(\/index.html)?$/,
+  /^https:\/\/lokibai\.vercel\.app(\/index.html)?$/,
   new workbox.strategies.StaleWhileRevalidate()
 );
 
 workbox.routing.registerRoute(
-  /^https:\/\/bing-api\.lokibai\.online/,
+  /^https:\/\/bing-api\.lokibai\.vercel\.app/,
   new workbox.strategies.StaleWhileRevalidate()
 );
 
